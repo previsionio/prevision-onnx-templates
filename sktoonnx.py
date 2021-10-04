@@ -10,6 +10,7 @@ import numpy as np
 import logging
 
 from pathlib import Path
+import yaml
 
 
 
@@ -95,6 +96,14 @@ logging.info(f"Saving the model to {join(OUTPUT_PATH,'classif_fraud.onnx')}")
 with open(join(OUTPUT_PATH,"classif_fraud.onnx"), "wb") as f:
     f.write(onx.SerializeToString())
 
+logging.info("Generating and saving config file")
+config={}
+config["class_names"] = [str(c) for c in set(y_train)]
+config["input"] = [str(feature) for feature in X_train.columns]
+
+with open(join(OUTPUT_PATH,"classif_fraud_config.yaml"), 'w') as file:
+    documents = yaml.dump(config, file)
+
 
 
 
@@ -108,8 +117,8 @@ input_name = sess.get_inputs()[0].name
 label_name = sess.get_outputs()[0].name
 
 logging.info("Applyed it on testest")
-cols = list(pd.read_csv(join(OUTPUT_PATH,"testset_fraud.csv"), nrows =1))
-X_test=np.array(pd.read_csv(join(OUTPUT_PATH,'testset_fraud.csv'), usecols =[i for i in cols if i != 'fraude']).set_index('TransactionID'))
+cols = list(pd.read_csv(join(OUTPUT_PATH,"holdout_fraud.csv"), nrows =1))
+X_test=np.array(pd.read_csv(join(OUTPUT_PATH,'holdout_fraud.csv'), usecols =[i for i in cols if i != 'fraude']).set_index('TransactionID'))
 
 
 pred_onx = sess.run([label_name], {input_name: X_test.astype(np.float32)})[0]
