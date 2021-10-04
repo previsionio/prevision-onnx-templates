@@ -7,6 +7,14 @@ A complete doc is available [here](https://previsionio.readthedocs.io/fr/latest/
 
 ## Setup
 
+Clone this repo and open the prevision-onnx-templates folder :
+
+```sh
+git clone https://github.com/previsionio/prevision-onnx-templates.git
+cd prevision-onnx-templates
+```
+
+
 If not done, create a virtualenv 
 
 ```sh
