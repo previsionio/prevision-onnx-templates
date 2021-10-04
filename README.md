@@ -3,7 +3,7 @@
 This repo provide code to understand and build onnx models for use in the [Prevision.io Platform](https://cloud.prevision.io).
 
 
-A complete doc is available [here](https://previsionio.readthedocs.io/fr/latest/Studio/experiment.html)
+A complete doc for using onnx model in [Prevision.io Platform](https://cloud.prevision.io) is available [here](https://previsionio.readthedocs.io/fr/latest/studio/experiments/external-model.html)
 
 ## Setup
 
