@@ -1,0 +1,119 @@
+class_names:
+- 0.0
+- 1.0
+input:
+- DeviceType_desktop
+- DeviceType_mobile
+- Code Produit_C
+- Code Produit_H
+- Code Produit_R
+- Code Produit_S
+- Domaine Email Login_aim.com
+- Domaine Email Login_anonymous.com
+- Domaine Email Login_aol.com
+- Domaine Email Login_att.net
+- Domaine Email Login_bellsouth.net
+- Domaine Email Login_cableone.net
+- Domaine Email Login_centurylink.net
+- Domaine Email Login_cfl.rr.com
+- Domaine Email Login_charter.net
+- Domaine Email Login_comcast.net
+- Domaine Email Login_cox.net
+- Domaine Email Login_earthlink.net
+- Domaine Email Login_embarqmail.com
+- Domaine Email Login_frontier.com
+- Domaine Email Login_frontiernet.net
+- Domaine Email Login_gmail
+- Domaine Email Login_gmail.com
+- Domaine Email Login_gmx.de
+- Domaine Email Login_hotmail.com
+- Domaine Email Login_hotmail.es
+- Domaine Email Login_hotmail.fr
+- Domaine Email Login_icloud.com
+- Domaine Email Login_juno.com
+- Domaine Email Login_live.com
+- Domaine Email Login_live.com.mx
+- Domaine Email Login_mac.com
+- Domaine Email Login_mail.com
+- Domaine Email Login_me.com
+- Domaine Email Login_msn.com
+- Domaine Email Login_netzero.com
+- Domaine Email Login_netzero.net
+- Domaine Email Login_optonline.net
+- Domaine Email Login_outlook.com
+- Domaine Email Login_outlook.es
+- Domaine Email Login_prodigy.net.mx
+- Domaine Email Login_protonmail.com
+- Domaine Email Login_ptd.net
+- Domaine Email Login_q.com
+- Domaine Email Login_roadrunner.com
+- Domaine Email Login_rocketmail.com
+- Domaine Email Login_sbcglobal.net
+- Domaine Email Login_suddenlink.net
+- Domaine Email Login_twc.com
+- Domaine Email Login_verizon.net
+- Domaine Email Login_web.de
+- Domaine Email Login_windstream.net
+- Domaine Email Login_yahoo.co.uk
+- Domaine Email Login_yahoo.com
+- Domaine Email Login_yahoo.com.mx
+- Domaine Email Login_yahoo.de
+- Domaine Email Login_yahoo.es
+- Domaine Email Login_yahoo.fr
+- Domaine Email Login_ymail.com
+- Domaine email livraison_aim.com
+- Domaine email livraison_anonymous.com
+- Domaine email livraison_aol.com
+- Domaine email livraison_att.net
+- Domaine email livraison_bellsouth.net
+- Domaine email livraison_cableone.net
+- Domaine email livraison_centurylink.net
+- Domaine email livraison_cfl.rr.com
+- Domaine email livraison_charter.net
+- Domaine email livraison_comcast.net
+- Domaine email livraison_cox.net
+- Domaine email livraison_earthlink.net
+- Domaine email livraison_embarqmail.com
+- Domaine email livraison_frontier.com
+- Domaine email livraison_gmail
+- Domaine email livraison_gmail.com
+- Domaine email livraison_gmx.de
+- Domaine email livraison_hotmail.com
+- Domaine email livraison_hotmail.es
+- Domaine email livraison_hotmail.fr
+- Domaine email livraison_icloud.com
+- Domaine email livraison_juno.com
+- Domaine email livraison_live.com
+- Domaine email livraison_live.com.mx
+- Domaine email livraison_mac.com
+- Domaine email livraison_mail.com
+- Domaine email livraison_me.com
+- Domaine email livraison_msn.com
+- Domaine email livraison_optonline.net
+- Domaine email livraison_outlook.com
+- Domaine email livraison_outlook.es
+- Domaine email livraison_prodigy.net.mx
+- Domaine email livraison_protonmail.com
+- Domaine email livraison_ptd.net
+- Domaine email livraison_q.com
+- Domaine email livraison_roadrunner.com
+- Domaine email livraison_rocketmail.com
+- Domaine email livraison_sbcglobal.net
+- Domaine email livraison_sc.rr.com
+- Domaine email livraison_scranton.edu
+- Domaine email livraison_verizon.net
+- Domaine email livraison_web.de
+- Domaine email livraison_windstream.net
+- Domaine email livraison_yahoo.co.uk
+- Domaine email livraison_yahoo.com
+- Domaine email livraison_yahoo.com.mx
+- Domaine email livraison_yahoo.de
+- Domaine email livraison_yahoo.es
+- Domaine email livraison_yahoo.fr
+- Domaine email livraison_ymail.com
+- Timestamp Transaction
+- Montant €
+- Carte 1
+- Adresse Hash 1
+- Adresse Hash 2
+- Distance Livraison

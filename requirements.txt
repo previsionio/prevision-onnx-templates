@@ -1,0 +1,5 @@
+
+pandas==1.3.3
+skl2onnx==1.9.3
+sklearn==0.0
+onnxruntime
