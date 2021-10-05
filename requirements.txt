@@ -3,3 +3,5 @@ pandas
 skl2onnx
 sklearn
 onnxruntime
+python-dotenv
+previsionio

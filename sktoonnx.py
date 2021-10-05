@@ -109,7 +109,7 @@ with open(join(OUTPUT_PATH,"classif_fraud_config.yaml"), 'w') as file:
 
 logging.info("********************** Checking the onnx file ***********************************")
 import onnxruntime as rt
-import numpy
+
 logging.info("Loading a previous model")
 sess = rt.InferenceSession(join(OUTPUT_PATH,"classif_fraud.onnx"))
 
