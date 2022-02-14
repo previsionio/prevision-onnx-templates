@@ -94,52 +94,58 @@ y_train = train_data[TARGET]
 
 
 classifiers=[ {
-                "name":"lrsklearn",
+                "name":"sklearn-lr",
                 "algo":LogisticRegression(max_iter=3000)
                 },
                 {  
-                "name":"knnsk",
+                "name":"sklearn-knn",
                 "algo": KNeighborsClassifier(3)
                 },
                 {
-                    "name":"svcskl",
+                    "name":"sklearn-svc",
                     "algo":SVC(kernel="linear", C=0.025)
                 },
                 {
-                    "name":"svcsk",
+                    "name":"sklearn-svcg2",
                     "algo":SVC(gamma=2, C=1)
                 },
                 {
-                    "name":"gpcsk",
+                    "name":"sklearn-gaussian",
                     "algo":GaussianProcessClassifier(1.0 * RBF(1.0))
                 },
                 {
-                    "name":"dtsk",
+                    "name":"sklearn Decision Tree",
                     "algo":DecisionTreeClassifier(max_depth=5),
                 },
                 {
-                    "name":"rfsk",
-                    "algo":RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1),
-                },
-                {
-                    "name":"mlpcsk",
+                    "name":"sklearn MLP Classifier",
                     "algo":MLPClassifier(alpha=1, max_iter=1000),
                 },
                 {
-                    "name":"gsk",
+                    "name":"sklearn Gaussian",
                     "algo":GaussianNB(),
+                },
+                {
+                    "name":"Sklearn Standard small random forest",
+                    "algo":RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1),
                 }
             ]
+
+
 
 logging.info("Input are all float")
 initial_type = [('float_input', FloatTensorType([None,X_train.shape[1]]))]
 
 logging.info("Saving config files")
-config={}
-config["class_names"] = [str(c) for c in set(y_train)]
-config["input"] = [str(feature) for feature in X_train.columns]
-with open(join(INPUT_PATH,'logreg_fraude.yaml'), 'w') as f:
-    yaml.dump(config, f)
+for clf in classifiers :
+    config={}
+    config["class_names"] = [str(c) for c in set(y_train)]
+    config["input"] = [str(feature) for feature in X_train.columns]
+    config["algorithm"] = clf["name"]
+    config["hyperparams"] = [{parameter:clf["algo"].get_params()[parameter]} for parameter in clf["algo"].get_params()]
+    with open(join(INPUT_PATH,f'{clf["name"]}_logreg_fraude.yaml'), 'w') as f:
+        yaml.dump(config, f)
+
 
 
 
@@ -155,8 +161,9 @@ for clf in classifiers :
 
 
 logging.info( "Uploading all the models in the same experiment")
-external_models=[(clf["name"],join(INPUT_PATH,f'{clf["name"]}_logreg_fraude.onnx'), join(INPUT_PATH,'logreg_fraude.yaml')) for clf in classifiers ]
-exp = project.create_external_classification(experiment_name=f'churn_sklearn_{clf["name"]}',
+external_models=[(clf["name"],join(INPUT_PATH,f'{clf["name"]}_logreg_fraude.onnx'), join(INPUT_PATH,f'{clf["name"]}_logreg_fraude.yaml')) for clf in classifiers ]
+
+exp = project.create_external_classification(experiment_name=f'churn_sklearn',
                                     dataset=train,
                                     holdout_dataset=test,
                                     target_column=TARGET,

@@ -52,9 +52,9 @@ python sktoonnx.py
 The scripts build a ( very ) basic classifier and export it to onnx model. You can then use the content of `data/assets` folder into your [Prevision Account](https://cloud.prevision.io). Then see [the documentation for importing your own model](https://previsionio.readthedocs.io/fr/latest/studio/experiments/external-model.html)
 
 
-### Using the SDK
+### Using the SDK
 
-You can use ( and inspect )  the `sdkimport.py` script to export your models and pipeline programmatically. This script several basic sklearn pipeline ( feature engineering + modelisation) , convert them  to onnx and create an experiment to benchmark them altogether inside the same experiment into your [prevision account](https://cloud.prevision.io)
+You can use ( and inspect )  the `sdkimport.py` script to export your models and pipeline programmatically. This script uses several basic sklearn pipeline ( feature engineering + modelisation) , converts them  to onnx and create an experiment to benchmark them altogether inside the same experiment into your [prevision account](https://cloud.prevision.io)
 
 
 **Warning : this scripts uses ressources generated from the previous one so be sure to launch it before
