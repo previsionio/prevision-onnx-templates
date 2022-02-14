@@ -1,0 +1,70 @@
+class_names:
+- '0.0'
+- '1.0'
+input:
+- DeviceType_desktop
+- DeviceType_mobile
+- Code Produit_C
+- Code Produit_H
+- Code Produit_R
+- Code Produit_S
+- Domaine Email Login_anonymous.com
+- Domaine Email Login_aol.com
+- Domaine Email Login_bellsouth.net
+- Domaine Email Login_cfl.rr.com
+- Domaine Email Login_comcast.net
+- Domaine Email Login_cox.net
+- Domaine Email Login_earthlink.net
+- Domaine Email Login_embarqmail.com
+- Domaine Email Login_gmail.com
+- Domaine Email Login_hotmail.com
+- Domaine Email Login_icloud.com
+- Domaine Email Login_juno.com
+- Domaine Email Login_live.com
+- Domaine Email Login_mac.com
+- Domaine Email Login_mail.com
+- Domaine Email Login_me.com
+- Domaine Email Login_msn.com
+- Domaine Email Login_outlook.com
+- Domaine Email Login_sbcglobal.net
+- Domaine Email Login_verizon.net
+- Domaine Email Login_windstream.net
+- Domaine Email Login_yahoo.com
+- Domaine Email Login_ymail.com
+- Domaine email livraison_anonymous.com
+- Domaine email livraison_aol.com
+- Domaine email livraison_att.net
+- Domaine email livraison_bellsouth.net
+- Domaine email livraison_cfl.rr.com
+- Domaine email livraison_comcast.net
+- Domaine email livraison_cox.net
+- Domaine email livraison_embarqmail.com
+- Domaine email livraison_gmail.com
+- Domaine email livraison_hotmail.com
+- Domaine email livraison_icloud.com
+- Domaine email livraison_live.com
+- Domaine email livraison_mac.com
+- Domaine email livraison_mail.com
+- Domaine email livraison_me.com
+- Domaine email livraison_msn.com
+- Domaine email livraison_outlook.com
+- Domaine email livraison_sbcglobal.net
+- Domaine email livraison_verizon.net
+- Domaine email livraison_windstream.net
+- Domaine email livraison_yahoo.com
+- Domaine email livraison_ymail.com
+- 'Unnamed: 0'
+- Timestamp Transaction
+- Montant Euro
+- Carte 1
+- Adresse Hash 1
+- Adresse Hash 2
+- Distance Livraison
+
+
+​
+# optional metadata
+algorithm:
+  random-forest
+hyperparams:
+  max_depth: 5
